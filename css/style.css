@@ -1,0 +1,65 @@
+/* GENERAL */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #292b2c;
+    color: white;
+}
+
+form {
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-close {
+    margin-left: 10px;
+}
+
+
+.error{
+    display: none;
+    text-align: center;
+    font-size: 0.8em;
+    color: red;
+    font-weight: bold;
+}
+
+/* TODO-LSIT */
+#listeContacts{
+    padding: 20px;
+}
+
+#listeContacts .todo{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+
+#listeContacts .todo [type=checkbox]:checked + label{
+    text-decoration: line-through;
+}
+
+#listeContacts .todo:not(:last-child){
+border-bottom: 1px solid #000;
+}
